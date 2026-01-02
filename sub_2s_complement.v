@@ -12,7 +12,8 @@ module subtract_2s_complement (
     assign B_comp = ~B + 1'b1;
     assign Sum = A + B_comp;
     assign Result = Sum[3:0];
-    assign Carry  = Sum[4];   // Carry = 1 ? A ? B
+    assign Carry  = Sum[4];  
 
 endmodule
+
 
